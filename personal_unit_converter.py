@@ -61,16 +61,23 @@ name = input('Please enter your name: ').capitalize()
 
 print('Hello',name+',','Welcome to your personal unit converter.')
 
-choice = input('Please choose which conversion you would like to perform:\n'
+# choice = input('Please choose which conversion you would like to perform:\n'
+# '1 - Convert miles into kilometers\n'
+# '2 - Convert Kenyan shilings into US Dollars\n'
+# '3 - Convert percent to letter grade\n'
+# '4 - Convert kilograms into pounds(lbs\n'
+# '5 - Convert centimeters into inches\n'
+# )
+
+print('Please choose which conversion you would like to perform:\n'
 '1 - Convert miles into kilometers\n'
 '2 - Convert Kenyan shilings into US Dollars\n'
 '3 - Convert percent to letter grade\n'
 '4 - Convert kilograms into pounds(lbs\n'
-'5 - Convert centimeters into inches\n'
-)
+'5 - Convert centimeters into inches\n')
 
 
-print('Choice: ',choice)
+choice = input('Choice: ')
 
 if choice == str(1):
     mile = input("Value in miles to convert in km: ")
@@ -93,6 +100,7 @@ elif choice == str(5):
     cm_to_inches(cm)
 
 print('Goodbye', name)
+
 
 
 
